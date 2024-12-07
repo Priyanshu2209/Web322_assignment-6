@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/main.css"> <!-- Compiled Tailwind CSS -->
+</head>
+
+<body>
+    <%- include('partials/navbar', {page: '/about'}) %>
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8">
+        <div class="hero bg-base-200 min-h-[50vh]"> <!-- Hero section -->
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">About</h1>
+                    <p class="py-6">All about me.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Responsive Grid System -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <!-- Left Column: Image -->
+            <div class="flex justify-center items-center">
+                <img src="/images/elephant.png" alt="Profile Image" class="rounded-lg shadow-lg w-full max-w-xs"> <!-- Replace with your image -->
+            </div>
+
+           <!-- Right Column: About Me Blurb -->
+<div class="flex flex-col justify-center">
+    <h2 class="text-xl font-semibold">Hello!</h2>
+    <p class="mt-2">I am from the India and currently taking a course in Computer Programming and analysis.</p>
+
+    <h2 class="text-xl font-semibold">Here are my hobbies!</h2>
+    <p class="mt-2">In my spare time, I do enjoy my hobbies:</p>
+    <ul class="list-disc ml-5"> <!-- Added list-disc class and indentation -->
+        <li>playing volleyball</li>
+        <li>sketching</li>
+        <li>playing dram</li>
+    </ul>
+
+    
+
+    <h2 class="text-xl font-semibold">I also enjoy listening music, and some of my favorite artists are:</h2>
+    <ul > <!-- Added list-disc class and indentation -->
+        <li type="list-disc">Arijit</li>
+        <li>YOYO honey sing</li>
+        <li>A R Rehman</li>
+    </ul>
+</div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
